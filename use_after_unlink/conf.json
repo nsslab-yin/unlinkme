@@ -1,0 +1,15 @@
+{
+"flag_dir":"/ctfs/unlinkMe/use_after_unlink/flag",
+"flag_pre":"FLAG_USE_AFTER_UNLINK_IF_YOU_C@N_",
+"execs":[
+	{"cmd" : " chown guest:guest /home/guest/" , "extra" : "", "options" : ""},
+	{"cmd" : " chmod 755 /home/guest" , "extra" : "", "options" : ""},
+    {"cmd" : " chown ctf:guest /home/guest/" , "extra" : "/use_after_unlink", "options" : ""},
+    {"cmd" : " chmod 4550 /home/guest/", "extra" : "/use_after_unlink", "options" : ""},
+    {"cmd" : " chattr +i /home/guest/", "extra" : "/use_after_unlink", "options" : "--privileged "},
+    {"cmd" : " chown ctf:ctf /home/guest/" , "extra" : "/flag", "options" : ""},
+    {"cmd" : " chmod 400 /home/guest/", "extra" : "/flag", "options" : ""},
+    {"cmd" : " chattr +i /home/guest/" , "extra" : "/flag", "options" : "--privileged "},
+    {"cmd" : " sh -c 'echo 0 > /home/guest/" , "extra" : "/../../../proc/sys/kernel/randomize_va_space'", "options" : "--privileged "}
+]
+}
