@@ -1,0 +1,6 @@
+{
+  "name": "Unlinkme",
+  "tagline": "unlinkme, heap double free challenge chain",
+  "body": "### Heap Double Free :: Unlinkme\r\n* In this lab, students can get first-hand experience on exploiting heap-based double free vulnerability.\r\n* By playing with the stepwise challenges, students can understand how the heap is managed by `glibc malloc()` and learn to exploit the `unlink()` after figuring out `double free` vulnerabilities.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
